@@ -20,7 +20,7 @@ public class LoginPage extends Base{
 
 	
 	
-	public void login(String txt1, String txt2) throws InterruptedException {
+	public void login() throws InterruptedException {
 		
 	
 		wait(Duration.ofSeconds(5),emailIn);

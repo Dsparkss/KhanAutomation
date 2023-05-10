@@ -63,7 +63,7 @@ public class HandlingQuizPage extends Base{
 	
 	public void upNextbtn() {
 		
-		wait(Duration.ofSeconds(9),upNextbtn);
+		wait(Duration.ofSeconds(20),upNextbtn);
 		driver.findElement(upNextbtn).click();
 		
 	}

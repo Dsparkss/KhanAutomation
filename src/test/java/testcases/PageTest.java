@@ -36,7 +36,7 @@ public class PageTest extends Base {
 		
 		
 	    home.homePage();
-		log.login("dineshkarthidk28@gmail.com","Dinesh@123");
+		log.login();
 		welcome.welcomePageAssert();
 		welcome.welcomeTittle();
 		courses.courseDropDown();
