@@ -21,14 +21,14 @@ public class PageTest extends Base {
 	NumbersPage number = new NumbersPage();
 	HandlingQuizPage quiz = new HandlingQuizPage();
 
-
+	
 	
 	@BeforeTest
 	public void browserLaunch() {
 		
 		home.invokeBrowser();
 		
-		
+		//dddd
 	}
 	
 	@Test
