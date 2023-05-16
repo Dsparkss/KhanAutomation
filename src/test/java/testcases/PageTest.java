@@ -28,7 +28,7 @@ public class PageTest extends Base {
 		
 		home.invokeBrowser();
 		
-		//dddd
+		
 	}
 	
 	@Test
@@ -41,17 +41,12 @@ public class PageTest extends Base {
 		welcome.welcomeTittle();
 		courses.courseDropDown();
 		number.startQuiz();
+		number.handleLetsGoButton();
 		quiz.handleDragDrop();
+		quiz.successfullCompletion();
 		quiz.upNextbtn();
 		
 	}
-	
-	
-
-	
-	
-
-	
 	
 
 }

@@ -4,8 +4,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import org.testng.Assert;
 
 import browserUtility.Base;
@@ -24,10 +22,11 @@ public class WelcomePage extends Base {
 				driver.findElement(welcomeMsg).getText(), "Welcome, dineshkarthidk28"
 				);
 	}
-	public void welcomeTittle() {
+	public void welcomeTittle() throws InterruptedException {
 		
 		Assert.assertEquals(driver.getTitle(), "* Classes | Khan Academy");
 		System.out.println("I have Navigated to the Welcome Page");
+		Thread.sleep(2000);
 		
 	}
 	}

@@ -1,12 +1,9 @@
 package pages;
 
-import java.io.FileInputStream;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 
 import browserUtility.Base;
 
@@ -25,7 +22,9 @@ public class LoginPage extends Base{
 	
 		wait(Duration.ofSeconds(5),emailIn);
 		driver.findElement(emailIn).sendKeys(prop.getProperty("email"));
+		Thread.sleep(1000);
 		driver.findElement(passIn).sendKeys(prop.getProperty("pwd"));
+		Thread.sleep(1000);
 		driver.findElement(submtbtn).click();
 	}
 

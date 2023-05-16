@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\2136966\AppData\Local\Temp\11\testng-eclipse-403235175\testng-customsuite.xml</span>
+                    <span>C:\Users\2136966\AppData\Local\Temp\1\testng-eclipse--91848683\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,32 +129,17 @@
                   <a name="quizAutomation">
                   </a> <!-- quizAutomation -->
                   <span class="method-name">quizAutomation</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app-shell-root&quot;]/div/main/div[3]/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div[1]/div/form/div/div[1]/div/div[1]/div/strong/span/span[2]/span[1]/span/span[2]/span&quot;}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;app-shell-root&quot;]/div/main/div[2]/div[1]/div/div/h1 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dcbe433d31772dd4447c62eac5c2efa, findElement {using=xpath, value=//*[@id=&quot;app-shell-root&quot;]/div/main/div[3]/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div[1]/div/form/div/div[1]/div/div[1]/div/strong/span/span[2]/span[1]/span/span[2]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52041/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9dcbe433d31772dd4447c62eac5c2efa
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at pages.HandlingQuizPage.handleDragDrop(HandlingQuizPage.java:39)
-	at testcases.PageTest.quizAutomation(PageTest.java:44)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:54112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54112/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1df29d14d9b49f8ea287a41a4ccc6f1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at browserUtility.Base.wait(Base.java:67)
+	at pages.WelcomePage.welcomePageAssert(WelcomePage.java:20)
+	at testcases.PageTest.quizAutomation(PageTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -192,7 +177,7 @@ Session ID: 9dcbe433d31772dd4447c62eac5c2efa
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2136966\AppData\Local\Temp\11\testng-eclipse-403235175\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\2136966\AppData\Local\Temp\1\testng-eclipse--91848683\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,11 +186,7 @@ Session ID: 9dcbe433d31772dd4447c62eac5c2efa
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.PageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;quizAutomation&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testcases.PageTest --&gt;
+      &lt;class name=&quot;testcases.PageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -249,12 +230,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'quizAutomation')
 data.setCell(0, 2, 'testcases.PageTest')
-data.setCell(0, 3, 27741);
+data.setCell(0, 3, 10900);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -289,7 +270,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">quizAutomation</span>
-                <span class="method-start">5101 ms</span>
+                <span class="method-start">3980 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
